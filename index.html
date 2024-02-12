@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="main.css" />
+        <!-- <style>
+            section{
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        </style> -->
+
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container-md">
+                <!-- navbar brand -->
+                <a href="#" class="navbar-brand">Channel Technical</a>
+
+                <!-- navbar collapse button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#collapsing-navcontent">
+                    <span class="navbar-toggler-icon custom-navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapsing navbar content -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsing-navcontent">
+                    <!-- navbar-links -->
+                    <ul class="navbar-nav "> <!-- ms-auto can be written instead of justify-content-end in the above-->
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-light active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-light">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link text-light">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link text-light">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header       -->
+        <section class="header pt-5 bg-dark box">
+            <div class="container py-5">
+                <div class="row justify-content-between py-5 g-5 ">
+                    <div class="col-12 col-md-5 text-white text-center text-md-start order-1 order-md-0" >
+                        <div>
+                            <h1>We collect High</h2>
+                                <h1>Quality Leads</h2>
+                        </div>
+                        <p class="small text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            voluptatibus porro mollitia enim. Sit quos nostrum eius, ea tempora optio veritatis facere
+                            totam impedit soluta, voluptate praesentium, quod quo officiis!</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+
+                    <div class="col-12 col-md-5 p-5 p-md-0 text-center">
+                        <video src="images/hero.mp4" autoplay loop muted class="img-fluid rounded-4 "></video>
+                    </div>
+                </div>
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 754"><path fill="white" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,90.7C480,107,600,181,720,186.7C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,90.7C480,107,600,181,720,186.7C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
+            <svg style="margin-top:-70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 200">
+                <path fill="white" fill-opacity="1"
+                    d="M0,160L60,138.7C120,117,240,75,360,90.7C480,107,600,181,720,186.7C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100"><path fill="white" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,90.7C480,107,600,181,720,186.7C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
+        </section>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,192C672,171,768,117,864,122.7C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
+
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h3>What We Will Do For</h3>
+                    <h3 class="shadow-sm d-inline-block px-2">Your Business</h3>
+                </div>
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card border border-0">
+                            <img src="images/link.gif" class="img-fluid w-50 m-auto " alt="link image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Link Building</h4>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam cumque
+                                    vero! Ullam, et laborum!</p>
+                                <a href="#"><i class="bi bi-arrow-right-circle-fill fs-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card border border-0 shadow">
+                            <img src="images/speaker.gif" class="img-fluid w-50 m-auto" alt="link image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Content marketing</h4>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam cumque
+                                    vero! Ullam, et laborum!</p>
+                                <a href="#"><i class="bi bi-arrow-right-circle-fill fs-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <img src="images/seo.gif" class="img-fluid w-50 m-auto" alt="link image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">On Page Seo</h4>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam cumque
+                                    vero! Ullam, et laborum!</p>
+                                <a href="#"><i class="bi bi-arrow-right-circle-fill fs-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- banner -->
+        <section id="banner" class=" text-light py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-5">
+                    <div class="col-md-5 col-xl-3">
+                        <img src="images/phone.gif" class="img-fluid d-none d-md-block " alt="phone image">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="heading">
+                            <h3>Steps To Build A</h3>
+                            <h3>Successful Digital Product</h3>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum culpa, ducimus iste natus
+                            itaque debitis voluptatem dolorum ea vitae dignissimos provident, veritatis nostrum
+                            molestias repudiandae perspiciatis recusandae blanditiis. Blanditiis debitis voluptatem
+                            corrupti magnam ad ratione sunt distinctio, quod ducimus tempore a vel repellendus
+                            temporibus laboriosam. Minus maxime commodi nihil error!</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- services -->
+        <section id="services" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h3>Generating New Customers Via</h3>
+                    <h3 class="shadow-sm d-inline-block p-2">Online Mode</h3>
+                </div>
+                <div class="row row-cols-md-2 justify-content-center ">
+                    <div class="col-md-6 ">
+                        <div
+                            class="card flex-row justify-content-between align-items-center border border-0 shadow mb-4 g-4">
+                            <img src="images/phone.gif" class="w-25 img-fluid " alt="">
+                            <div class="card-body ">
+                                <h3 class="card-heading">Social Media Advertising</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem
+                                    voluptatibus labore fuga voluptas tempore magnam id quaerat ad minus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div
+                            class="card flex-row justify-content-between align-items-center border border-0 shadow mb-4 g-4">
+                            <img src="images/phone.gif" class="w-25 img-fluid" alt="">
+                            <div class="card-body ">
+                                <h3 class="card-heading">Social Media Advertising</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem
+                                    voluptatibus labore fuga voluptas tempore magnam id quaerat ad minus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div
+                            class="card flex-row justify-content-between align-items-center border border-0 shadow mb-4 g-4">
+                            <img src="images/phone.gif" class="w-25 img-fluid" alt="">
+                            <div class="card-body ">
+                                <h3 class="card-heading">Social Media Advertising</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem
+                                    voluptatibus labore fuga voluptas tempore magnam id quaerat ad minus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div
+                            class="card flex-row justify-content-between align-items-center border border-0 shadow mb-4 g-4">
+                            <img src="images/phone.gif" class="w-25 img-fluid" alt="">
+                            <div class="card-body ">
+                                <h3 class="card-heading">Social Media Advertising</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem
+                                    voluptatibus labore fuga voluptas tempore magnam id quaerat ad minus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- testimonial -->
+        <section class="testimonial bg-dark text-white py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h3>What Client Say</h3>
+                    <h3>About Us</h3>
+
+                </div>
+
+                <!-- carousel  -->
+                <div class="carousel slide pb-5 " id="testimonial__carousel">
+                    <div class="carousel-indicators mt-5">
+                        <button type="button" data-bs-target="#testimonial__carousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#testimonial__carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#testimonial__carousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center g-lg-5 g-3">
+                                <div class="col-xl-2 col-md-3 col-8 col-8 ">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center g-5">
+                                <div class="col-xl-2 col-md-3 col-8 ">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row justify-content-center g-5">
+                                <div class="col-xl-2 col-md-3 col-8 ">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-md-3 col-8">
+                                    <div class="card  green">
+                                        <img src="images/man.jpg" class="img-fluid p-2  d-block" alt="">
+
+                                        <div class="card-body text-center text-white pt-0">
+                                            <div class="mb-2 mt-0">Person name</div>
+                                            <p class="small ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nostrum, vero!</p>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star-fill small purple"></i>
+                                            <i class="bi bi-star small purple"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial__carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial__carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- tips and tricks section -->
+        <section class="tips_and_tricks py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h3>Tips and Tricks From</h3>
+                    <h3 class="shadow-sm d-inline-block">Our Exports</h3>
+                </div>
+                <div class="row row-cols-md-2 row-cols-xl-4 g-5 justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card shadow ">
+                            <img src="images/web.jpg" style="height: 300px ;  object-fit: cover;" alt="">
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between text-black-50 lead fw-normal">
+                                    <p> <i class="bi bi-person-vcard-fill me-3 fs-4"></i> 5000</p>
+                                    <p>March 3, 2020</p>
+                                </div>
+                                <h2 class="card-title">Web Development</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci sapiente
+                                    ullam laudantium velit eligendi nihil eum? Sit, numquam repellat!</p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card shadow ">
+                            <img src="images/web.jpg" style="height: 300px ;  object-fit: cover;" alt="">
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between text-black-50 lead fw-normal">
+                                    <p> <i class="bi bi-person-vcard-fill me-3 fs-4"></i> 5000</p>
+                                    <p>March 3, 2020</p>
+                                </div>
+                                <h2 class="card-title">Web Development</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci sapiente
+                                    ullam laudantium velit eligendi nihil eum? Sit, numquam repellat!</p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card shadow ">
+                            <img src="images/web.jpg" style="height: 300px ;  object-fit: cover;" alt="">
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between text-black-50 lead fw-normal">
+                                    <p> <i class="bi bi-person-vcard-fill me-3 fs-4"></i> 5000</p>
+                                    <p>March 3, 2020</p>
+                                </div>
+                                <h2 class="card-title">Web Development</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci sapiente
+                                    ullam laudantium velit eligendi nihil eum? Sit, numquam repellat!</p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card shadow ">
+                            <img src="images/web.jpg" style="height: 300px ;  object-fit: cover;" alt="">
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between text-black-50 lead fw-normal">
+                                    <p> <i class="bi bi-person-vcard-fill me-3 fs-4"></i> 5000</p>
+                                    <p>March 3, 2020</p>
+                                </div>
+                                <h2 class="card-title">Web Development</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci sapiente
+                                    ullam laudantium velit eligendi nihil eum? Sit, numquam repellat!</p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="black" fill-opacity="1"
+                d="M0,96L40,112C80,128,160,160,240,181.3C320,203,400,213,480,229.3C560,245,640,267,720,240C800,213,880,139,960,122.7C1040,107,1120,149,1200,165.3C1280,181,1360,171,1400,165.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg> -->
+        <section id="contact" class="bg-black text-white pb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,96L48,117.3C96,139,192,181,288,197.3C384,213,480,203,576,165.3C672,128,768,64,864,69.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+
+            <div class="container">
+
+                <h2 class="text-center shadow-sm mb-5">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10 ">
+                        <div class="form mb-5">
+                            <div class="d-flex justify-content-between">
+                                <div class="mb-3 w-50 me-4">
+                                    <label for="first-name" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="First name">
+                                </div>
+
+                                <div class="mb-3 w-50">
+                                    <label for="last-name" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <p class="small pb-0">We'll never share your email with anyone else</p>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Example textarea</label>
+                                <textarea name="text" id="message" rows="" class="form-control" id="message"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+
+                            <button type="button" class="btn btn-primary">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,197.3C384,213,480,203,576,165.3C672,128,768,64,864,69.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>            <div class="container"> -->
+
+        </section>
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row row-cols-1 justify-content-between text-white p-4 bg-black w-75 m-auto mb-5">
+                    <div class="col-md-2 text-center">
+                        <img src="images/map.gif" alt="" class="img-fluid w-50">
+                        <p>(+00) 1234 5678</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="images/map.gif" alt="" class="img-fluid w-50">
+                        <p>(+00) 1234 5678</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="images/map.gif" alt="" class="img-fluid w-50">
+                        <p>(+00) 1234 5678</p>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-lg-4 row-cols-3 justify-content-center  text-center text-white  py-5">
+                    <div class="col-lg-2">
+                        <p class="fw-bold">About</p>
+                        <ul style="list-style:none; padding: 0;">
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="fw-bold">About</p>
+                        <ul style="list-style:none; padding: 0;">
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="fw-bold">About</p>
+                        <ul style="list-style:none; padding: 0;">
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                            <li>our story</li>
+                        </ul>
+                    </div>
+                    <div class="col-10 col-lg-4">
+                        <form action="" class="mt-4 mt-md-0 d-block w-100">
+
+                            <label for="subscription" class="form-label fw-bold">Subscribe</label>
+                            <div class="input-group ">
+                                <input type="text" class="form-control" placeholder="Receipient's username"
+                                    id="subscription">
+                                <span class="input-group-text bg-primary">Subscribe</span>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border-top py-4 flex-md-row flex-column">
+                    <p class="text-white">Copyright &copy;2023 All rights reserved | This is good template</p>
+                    <div class="social-media-icon text-primary ">
+                        <i class="bi bi-facebook me-3 "></i>
+                        <i class="bi bi-instagram me-3"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
